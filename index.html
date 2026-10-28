@@ -9042,6 +9042,348 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
           </table>
         </div>
         <div class="tcap"><a href="#tables">How to read the tables</a></div>
+        <h3>Adjusted for player skill</h3>
+        <p>A faction's win rate also reflects who plays it. To separate the two, one model on 130,210
+        games gives every faction and every player a strength. It then estimates what each faction
+        wins against the opponents it actually met when both players are average and nobody goes first.
+        Only 52% of the games have a player who appears in five or more games, so skill is known well
+        for experienced players and is pulled toward average for the rest. The adjustment still improves
+        predictions on events the model has not seen, so it carries real information.</p>
+        <p>The adjustment is modest and widens the gaps. The largest changes are Astra Militarum (3.1
+        points down), Imperial Agents (2.4 points down) and Orks (1.7 points up), and 6 factions change
+        place in the ranking. Strong factions move up and weak ones down because their opponents tend
+        to be stronger players: Swiss pairings match winning players against each other, so a faction
+        that wins a lot meets better opposition in later rounds. The own-players column shows how much
+        better or worse than average the faction's own players are, the opponents column the same for
+        the players they met, both as the win rate against an average player.</p>
+        <div class="tw">
+          <table>
+            <thead>
+              <tr>
+                <th>Faction</th>
+                <th class="n">Games</th>
+                <th class="n">Win rate</th>
+                <th class="n">Adjusted</th>
+                <th class="n">95% CI</th>
+                <th class="n">Change (pp)</th>
+                <th class="n">Own players (pp)</th>
+                <th class="n">Opponents (pp)</th>
+                <th class="n">Rank</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#orks">Orks</a></td>
+                <td class="n">16,268</td>
+                <td class="n">55.6%</td>
+                <td class="n">57.3%</td>
+                <td class="n">56.0% to 58.6%</td>
+                <td class="n">+1.7</td>
+                <td class="n">+0.3</td>
+                <td class="n">+1.3</td>
+                <td class="n">1 to 1</td>
+              </tr>
+              <tr>
+                <td><a href="#chaos_daemons">Chaos Daemons</a></td>
+                <td class="n">9,433</td>
+                <td class="n">54.8%</td>
+                <td class="n">56.3%</td>
+                <td class="n">55.1% to 57.6%</td>
+                <td class="n">+1.6</td>
+                <td class="n">-0.2</td>
+                <td class="n">+0.9</td>
+                <td class="n">2 to 2</td>
+              </tr>
+              <tr>
+                <td><a href="#adeptus_custodes">Adeptus Custodes</a></td>
+                <td class="n">14,924</td>
+                <td class="n">54.3%</td>
+                <td class="n">55.8%</td>
+                <td class="n">54.7% to 56.9%</td>
+                <td class="n">+1.5</td>
+                <td class="n">-0.1</td>
+                <td class="n">+0.8</td>
+                <td class="n">3 to 3</td>
+              </tr>
+              <tr>
+                <td><a href="#deathwatch">Deathwatch</a></td>
+                <td class="n">1,709</td>
+                <td class="n">53.8%</td>
+                <td class="n">54.8%</td>
+                <td class="n">51.3% to 58.3%</td>
+                <td class="n">+1.1</td>
+                <td class="n">+0.5</td>
+                <td class="n">+1.0</td>
+                <td class="n">4 to 4</td>
+              </tr>
+              <tr>
+                <td><a href="#dark_angels">Dark Angels</a></td>
+                <td class="n">11,012</td>
+                <td class="n">53.5%</td>
+                <td class="n">54.4%</td>
+                <td class="n">53.0% to 55.8%</td>
+                <td class="n">+0.9</td>
+                <td class="n">+0.2</td>
+                <td class="n">+0.7</td>
+                <td class="n">5 to 5</td>
+              </tr>
+              <tr>
+                <td><a href="#t_au_empire">T&#x27;au Empire</a></td>
+                <td class="n">11,987</td>
+                <td class="n">51.8%</td>
+                <td class="n">52.7%</td>
+                <td class="n">51.7% to 53.6%</td>
+                <td class="n">+0.8</td>
+                <td class="n">-0.1</td>
+                <td class="n">+0.5</td>
+                <td class="n">6 to 6</td>
+              </tr>
+              <tr>
+                <td><a href="#leagues_of_votann">Leagues of Votann</a></td>
+                <td class="n">8,601</td>
+                <td class="n">51.8%</td>
+                <td class="n">52.5%</td>
+                <td class="n">51.1% to 54.0%</td>
+                <td class="n">+0.7</td>
+                <td class="n">+0.0</td>
+                <td class="n">+0.5</td>
+                <td class="n">7 to 7</td>
+              </tr>
+              <tr>
+                <td><a href="#emperor_s_children">Emperor&#x27;s Children</a></td>
+                <td class="n">10,534</td>
+                <td class="n">51.4%</td>
+                <td class="n">52.3%</td>
+                <td class="n">51.1% to 53.4%</td>
+                <td class="n">+0.9</td>
+                <td class="n">-0.0</td>
+                <td class="n">+0.7</td>
+                <td class="n">9 to 8</td>
+              </tr>
+              <tr>
+                <td><a href="#necrons">Necrons</a></td>
+                <td class="n">15,319</td>
+                <td class="n">51.6%</td>
+                <td class="n">52.1%</td>
+                <td class="n">51.0% to 53.2%</td>
+                <td class="n">+0.5</td>
+                <td class="n">+0.3</td>
+                <td class="n">+0.6</td>
+                <td class="n">8 to 9</td>
+              </tr>
+              <tr>
+                <td><a href="#adeptus_mechanicus">Adeptus Mechanicus</a></td>
+                <td class="n">5,779</td>
+                <td class="n">50.6%</td>
+                <td class="n">50.8%</td>
+                <td class="n">48.8% to 52.7%</td>
+                <td class="n">+0.2</td>
+                <td class="n">-0.1</td>
+                <td class="n">+0.1</td>
+                <td class="n">10 to 10</td>
+              </tr>
+              <tr>
+                <td><a href="#thousand_sons">Thousand Sons</a></td>
+                <td class="n">8,215</td>
+                <td class="n">50.3%</td>
+                <td class="n">50.6%</td>
+                <td class="n">49.0% to 52.2%</td>
+                <td class="n">+0.3</td>
+                <td class="n">+0.2</td>
+                <td class="n">+0.5</td>
+                <td class="n">11 to 11</td>
+              </tr>
+              <tr>
+                <td><a href="#adepta_sororitas">Adepta Sororitas</a></td>
+                <td class="n">5,818</td>
+                <td class="n">50.1%</td>
+                <td class="n">50.3%</td>
+                <td class="n">48.9% to 51.6%</td>
+                <td class="n">+0.2</td>
+                <td class="n">+0.1</td>
+                <td class="n">+0.2</td>
+                <td class="n">12 to 12</td>
+              </tr>
+              <tr>
+                <td><a href="#world_eaters">World Eaters</a></td>
+                <td class="n">10,501</td>
+                <td class="n">50.0%</td>
+                <td class="n">49.9%</td>
+                <td class="n">48.7% to 51.2%</td>
+                <td class="n">-0.1</td>
+                <td class="n">-0.3</td>
+                <td class="n">-0.3</td>
+                <td class="n">13 to 13</td>
+              </tr>
+              <tr>
+                <td><a href="#tyranids">Tyranids</a></td>
+                <td class="n">13,852</td>
+                <td class="n">49.8%</td>
+                <td class="n">49.7%</td>
+                <td class="n">48.8% to 50.6%</td>
+                <td class="n">-0.2</td>
+                <td class="n">+0.0</td>
+                <td class="n">-0.1</td>
+                <td class="n">14 to 14</td>
+              </tr>
+              <tr>
+                <td><a href="#space_wolves">Space Wolves</a></td>
+                <td class="n">6,484</td>
+                <td class="n">49.1%</td>
+                <td class="n">48.7%</td>
+                <td class="n">47.2% to 50.2%</td>
+                <td class="n">-0.4</td>
+                <td class="n">-0.0</td>
+                <td class="n">-0.3</td>
+                <td class="n">15 to 15</td>
+              </tr>
+              <tr>
+                <td><a href="#imperial_knights">Imperial Knights</a></td>
+                <td class="n">9,716</td>
+                <td class="n">48.6%</td>
+                <td class="n">48.3%</td>
+                <td class="n">47.1% to 49.6%</td>
+                <td class="n">-0.3</td>
+                <td class="n">-0.4</td>
+                <td class="n">-0.5</td>
+                <td class="n">16 to 16</td>
+              </tr>
+              <tr>
+                <td><a href="#space_marines__astartes_">Space Marines</a></td>
+                <td class="n">18,650</td>
+                <td class="n">48.6%</td>
+                <td class="n">47.9%</td>
+                <td class="n">46.9% to 48.9%</td>
+                <td class="n">-0.7</td>
+                <td class="n">+0.1</td>
+                <td class="n">-0.4</td>
+                <td class="n">17 to 17</td>
+              </tr>
+              <tr>
+                <td><a href="#death_guard">Death Guard</a></td>
+                <td class="n">10,190</td>
+                <td class="n">48.1%</td>
+                <td class="n">47.5%</td>
+                <td class="n">46.3% to 48.6%</td>
+                <td class="n">-0.7</td>
+                <td class="n">-0.3</td>
+                <td class="n">-0.7</td>
+                <td class="n">18 to 18</td>
+              </tr>
+              <tr>
+                <td><a href="#genestealer_cult">Genestealer Cult</a></td>
+                <td class="n">3,605</td>
+                <td class="n">47.5%</td>
+                <td class="n">46.6%</td>
+                <td class="n">44.5% to 48.8%</td>
+                <td class="n">-0.9</td>
+                <td class="n">-0.1</td>
+                <td class="n">-0.7</td>
+                <td class="n">19 to 19</td>
+              </tr>
+              <tr>
+                <td><a href="#grey_knights">Grey Knights</a></td>
+                <td class="n">6,223</td>
+                <td class="n">47.1%</td>
+                <td class="n">46.3%</td>
+                <td class="n">44.8% to 47.8%</td>
+                <td class="n">-0.8</td>
+                <td class="n">+0.2</td>
+                <td class="n">-0.2</td>
+                <td class="n">20 to 20</td>
+              </tr>
+              <tr>
+                <td><a href="#chaos_knights">Chaos Knights</a></td>
+                <td class="n">6,108</td>
+                <td class="n">46.9%</td>
+                <td class="n">46.1%</td>
+                <td class="n">44.8% to 47.4%</td>
+                <td class="n">-0.8</td>
+                <td class="n">-0.7</td>
+                <td class="n">-1.1</td>
+                <td class="n">22 to 21</td>
+              </tr>
+              <tr>
+                <td><a href="#chaos_space_marines">Chaos Space Marines</a></td>
+                <td class="n">10,990</td>
+                <td class="n">47.0%</td>
+                <td class="n">45.9%</td>
+                <td class="n">44.6% to 47.2%</td>
+                <td class="n">-1.1</td>
+                <td class="n">+0.2</td>
+                <td class="n">-0.6</td>
+                <td class="n">21 to 22</td>
+              </tr>
+              <tr>
+                <td><a href="#drukhari">Drukhari</a></td>
+                <td class="n">5,721</td>
+                <td class="n">46.9%</td>
+                <td class="n">45.9%</td>
+                <td class="n">44.3% to 47.4%</td>
+                <td class="n">-1.0</td>
+                <td class="n">+0.0</td>
+                <td class="n">-0.6</td>
+                <td class="n">23 to 23</td>
+              </tr>
+              <tr>
+                <td><a href="#blood_angels">Blood Angels</a></td>
+                <td class="n">7,134</td>
+                <td class="n">46.0%</td>
+                <td class="n">44.4%</td>
+                <td class="n">43.2% to 45.7%</td>
+                <td class="n">-1.6</td>
+                <td class="n">+0.0</td>
+                <td class="n">-1.2</td>
+                <td class="n">24 to 24</td>
+              </tr>
+              <tr>
+                <td><a href="#black_templars">Black Templars</a></td>
+                <td class="n">3,723</td>
+                <td class="n">45.3%</td>
+                <td class="n">44.1%</td>
+                <td class="n">42.0% to 46.2%</td>
+                <td class="n">-1.2</td>
+                <td class="n">+0.0</td>
+                <td class="n">-0.6</td>
+                <td class="n">26 to 25</td>
+              </tr>
+              <tr>
+                <td><a href="#aeldari">Aeldari</a></td>
+                <td class="n">7,017</td>
+                <td class="n">45.5%</td>
+                <td class="n">44.0%</td>
+                <td class="n">42.9% to 45.1%</td>
+                <td class="n">-1.5</td>
+                <td class="n">-0.2</td>
+                <td class="n">-1.1</td>
+                <td class="n">25 to 26</td>
+              </tr>
+              <tr>
+                <td><a href="#imperial_agents">Imperial Agents</a></td>
+                <td class="n">860</td>
+                <td class="n">43.4%</td>
+                <td class="n">41.1%</td>
+                <td class="n">36.5% to 45.6%</td>
+                <td class="n">-2.4</td>
+                <td class="n">+0.3</td>
+                <td class="n">-1.2</td>
+                <td class="n">27 to 27</td>
+              </tr>
+              <tr>
+                <td><a href="#astra_militarum">Astra Militarum</a></td>
+                <td class="n">8,457</td>
+                <td class="n">40.3%</td>
+                <td class="n">37.2%</td>
+                <td class="n">35.9% to 38.4%</td>
+                <td class="n">-3.1</td>
+                <td class="n">-0.1</td>
+                <td class="n">-2.3</td>
+                <td class="n">28 to 28</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tcap"><a href="#tables">How to read the tables</a></div>
       </section>
       <section class="part" id="brackets">
         <h2 id="brackets-top">Results brackets</h2>
@@ -10226,6 +10568,137 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         = 16% of games) and Deathwatch (-1.6 points, five most active players = 10% of games). The
         skill proxy (each player's results at their other events) differs little between factions,
         from -1.5 to +1.3 points, so player track record does not explain the ranking.</p>
+        <h3>Points changes and pick rates</h3>
+        <p>Unit costs are read from the lists themselves: a cost counts as changed when the most common
+        cost of a unit in its faction's lists differs between the window before and the window after
+        an update, with at least 10 lists and a clear majority cost in each. 396 cost changes qualify
+        across 5 updates (22 July, 26 August, 5 September, 3 October and 17 October): 224 increases
+        and 172 decreases, with a median size of 8%. Units that kept their cost in the same window
+        are the comparison group.</p>
+        <p>Among units in at least 5% of their faction's lists before the update, a cost increase went
+        with a median change in pick rate of -10% (-13% to -6%, 186 units), and a decrease with 6%
+        (2% to 12%, 150 units). Units with an unchanged cost moved by -1% (2,498 units). The pick rate
+        fell for 66% of the units that got more expensive and rose for 63% of those that got cheaper.</p>
+        <p>Lists with a unit that got cheaper also did better afterwards: the unit's effect on win
+        rate moved by +2.2 points (+0.9 to +3.9), against -0.7 points (-1.5 to +0.2) for units that
+        got more expensive. A cost change often comes with a rules change and with a faction update,
+        so the pick rates and win rates are associated with the change but not caused by cost alone.
+        A straight line through all 2,831 units gives no stable relation between the size of the change
+        and the size of the pick rate response (-0.03 per unit of relative cost, standard error 0.24),
+        so the direction matters more than the size.</p>
+        <div class="tw">
+          <table>
+            <thead>
+              <tr>
+                <th>Faction</th>
+                <th>Unit</th>
+                <th>Update</th>
+                <th class="n">Points</th>
+                <th class="n">Pick rate</th>
+                <th class="n">Win rate effect (pp)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Orks</td>
+                <td>Painboy</td>
+                <td>5 Sep</td>
+                <td class="n">90 to 45</td>
+                <td class="n">64% to 17%</td>
+                <td class="n">+0.2 to -3.4</td>
+              </tr>
+              <tr>
+                <td>Dark Angels</td>
+                <td>Azrael</td>
+                <td>3 Oct</td>
+                <td class="n">140 to 150</td>
+                <td class="n">84% to 43%</td>
+                <td class="n">+1.4 to -3.0</td>
+              </tr>
+              <tr>
+                <td>Deathwatch</td>
+                <td>Lieutenant with Combi-weapon</td>
+                <td>22 Jul</td>
+                <td class="n">85 to 95</td>
+                <td class="n">55% to 17%</td>
+                <td class="n">-2.1 to -1.0</td>
+              </tr>
+              <tr>
+                <td>Adeptus Custodes</td>
+                <td>Trajann Valoris</td>
+                <td>17 Oct</td>
+                <td class="n">135 to 265</td>
+                <td class="n">36% to 73%</td>
+                <td class="n">-6.3 to -2.0</td>
+              </tr>
+              <tr>
+                <td>Orks</td>
+                <td>Wazdakka Gutsmek</td>
+                <td>5 Sep</td>
+                <td class="n">175 to 200</td>
+                <td class="n">64% to 28%</td>
+                <td class="n">+3.1 to +0.7</td>
+              </tr>
+              <tr>
+                <td>Space Wolves</td>
+                <td>Arjac Rockfist</td>
+                <td>3 Oct</td>
+                <td class="n">95 to 105</td>
+                <td class="n">76% to 41%</td>
+                <td class="n">-0.2 to -1.1</td>
+              </tr>
+              <tr>
+                <td>Dark Angels</td>
+                <td>Lion El’jonson</td>
+                <td>22 Jul</td>
+                <td class="n">285 to 265</td>
+                <td class="n">39% to 66%</td>
+                <td class="n">-11.0 to +1.9</td>
+              </tr>
+              <tr>
+                <td>Space Wolves</td>
+                <td>Grey Hunters</td>
+                <td>3 Oct</td>
+                <td class="n">165 to 180</td>
+                <td class="n">16% to 43%</td>
+                <td class="n">-3.9 to +0.2</td>
+              </tr>
+              <tr>
+                <td>Deathwatch</td>
+                <td>Inceptor Squad</td>
+                <td>3 Oct</td>
+                <td class="n">125 to 130</td>
+                <td class="n">8% to 34%</td>
+                <td class="n">n/a</td>
+              </tr>
+              <tr>
+                <td>Orks</td>
+                <td>Ghazghkull Thraka</td>
+                <td>5 Sep</td>
+                <td class="n">235 to 300</td>
+                <td class="n">64% to 38%</td>
+                <td class="n">+2.8 to -2.6</td>
+              </tr>
+              <tr>
+                <td>Dark Angels</td>
+                <td>Sammael</td>
+                <td>22 Jul</td>
+                <td class="n">105 to 95</td>
+                <td class="n">15% to 41%</td>
+                <td class="n">+2.2 to +8.3</td>
+              </tr>
+              <tr>
+                <td>Orks</td>
+                <td>Tankbustas</td>
+                <td>5 Sep</td>
+                <td class="n">125 to 145</td>
+                <td class="n">25% to 51%</td>
+                <td class="n">-1.7 to +3.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tcap"><a href="#tables">How to read the tables</a></div>
       </section>
       <section class="part" id="method">
         <h2>Method</h2>
@@ -10242,10 +10715,12 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         measured against other lists with the same detachment. Unit effects are measured against lists
         with the same detachment strength and the same number of distinct units. Shrinkage towards
         the faction mean is used only to rank noisy items.</p>
-        <p>An effect is called clear when it is at least 3 standard errors from zero. Across roughly
-        3,000 items tested, a handful of clear results will still be chance, so a single borderline
-        item should be read with care. Items in fewer than 15 to 40 lists, depending on the table,
-        are left out.</p>
+        <p>An effect is called clear when it is at least 3 standard errors from zero and also passes
+        a false discovery check. Units, detachments, enhancements and combinations are tested in four
+        groups (2,582 items in all), and within each group the expected share of false findings among
+        the clear ones is held at 5%. That check removed 6 items that would otherwise have been called
+        clear. A single borderline item should still be read with care. Items in fewer than 15 to 40
+        lists, depending on the table, are left out.</p>
         <h3>Player track record</h3>
         <p>Each player's average result at their other events (leave-one-event-out, shrunk towards
         zero) is subtracted. About 73% of games have such a history. Players with a single event get
@@ -10285,7 +10760,8 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
           effect and the player's track record. The figure after the sign is one standard error.</dd>
           <dt>z</dt>
           <dd>The effect divided by its standard error. Values of 3 or more in either direction are
-          called clear and coloured: blue for better, orange for worse.</dd>
+          called clear and coloured: blue for better, orange for worse. Units, detachments, enhancements
+          and combinations must also pass a false discovery check, so a few colours are left out.</dd>
           <dt>Model expects, Diff (pp), Reading</dt>
           <dd>Model expects is the win rate predicted from both factions' strength and the first-turn
           effect. Diff is the gap between the actual win rate and that prediction. Reading is shown
@@ -10357,7 +10833,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="orks-all">Whole edition</h3>
-            <div class="statline"><span class="big">55.6%<small>win rate, rank 1 of 28</small></span><span>16,345 games</span><span>4,849 lists from 2,759 players</span><span>top-10% finishes 1.54x entry share</span><span>going first 4.9 points better</span></div>
+            <div class="statline"><span class="big">55.6%<small>win rate, rank 1 of 28</small></span><span>16,345 games</span><span>4,849 lists from 2,759 players</span><span>top-10% finishes 1.54x entry share</span><span>going first 4.9 points better</span><span>57.3% adjusted for player skill</span></div>
             <p class="lead">59.5% of its players won at least 60% of their games, against 46.5% of
             all players. Orks has the highest win rate of the 28 factions: 55.6% over 16,345 games.
             More Dakka! went from 29% to 0% of the faction's lists between the first period and the
@@ -14881,7 +15357,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="chaos_daemons-all">Whole edition</h3>
-            <div class="statline"><span class="big">54.8%<small>win rate, rank 2 of 28</small></span><span>9,478 games</span><span>2,671 lists from 1,561 players</span><span>top-10% finishes 1.20x entry share</span><span>going first 3.0 points better</span></div>
+            <div class="statline"><span class="big">54.8%<small>win rate, rank 2 of 28</small></span><span>9,478 games</span><span>2,671 lists from 1,561 players</span><span>top-10% finishes 1.20x entry share</span><span>going first 3.0 points better</span><span>56.3% adjusted for player skill</span></div>
             <p class="lead">The pairing Legion of Excess + Warptide has a win rate 8.9 points above
             the faction average (197 lists). Daemonic Incursion lists have a win rate 6.8 points below
             the faction average and make up 11% of the faction's lists. Chaos Daemons won 54.8% of
@@ -18136,7 +18612,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="adeptus_custodes-all">Whole edition</h3>
-            <div class="statline"><span class="big">54.4%<small>win rate, rank 3 of 28</small></span><span>15,013 games</span><span>4,407 lists from 2,744 players</span><span>top-10% finishes 1.13x entry share</span><span>going first 1.4 points better</span></div>
+            <div class="statline"><span class="big">54.4%<small>win rate, rank 3 of 28</small></span><span>15,013 games</span><span>4,407 lists from 2,744 players</span><span>top-10% finishes 1.13x entry share</span><span>going first 1.4 points better</span><span>55.8% adjusted for player skill</span></div>
             <p class="lead">Adeptus Custodes won 54.4% of 15,013 games, 4.4 points above an even win
             rate (rank 3 of 28). Against Chaos Daemons it wins 56.9% over 655 games, 7.4 points above
             what its strength predicts. Might of the Moritoi went from 13% to 39% of the faction's
@@ -21888,7 +22364,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="deathwatch-all">Whole edition</h3>
-            <div class="statline"><span class="big">53.7%<small>win rate, rank 4 of 28</small></span><span>1,715 games</span><span>462 lists from 286 players</span><span>top-10% finishes 1.23x entry share</span><span>going first 4.0 points better</span></div>
+            <div class="statline"><span class="big">53.7%<small>win rate, rank 4 of 28</small></span><span>1,715 games</span><span>462 lists from 286 players</span><span>top-10% finishes 1.23x entry share</span><span>going first 4.0 points better</span><span>54.8% adjusted for player skill</span></div>
             <p class="lead">Deathwatch won 53.7% of 1,715 games, 3.7 points above an even win rate
             (rank 4 of 28). Lieutenant with Combi-weapon went from 59% to 4% of the faction's lists
             between the first period and the last 28 days. Without its three most active players the
@@ -24120,7 +24596,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="dark_angels-all">Whole edition</h3>
-            <div class="statline"><span class="big">53.5%<small>win rate, rank 5 of 28</small></span><span>11,069 games</span><span>3,228 lists from 1,891 players</span><span>top-10% finishes 1.34x entry share</span><span>going first 1.7 points better</span></div>
+            <div class="statline"><span class="big">53.5%<small>win rate, rank 5 of 28</small></span><span>11,069 games</span><span>3,228 lists from 1,891 players</span><span>top-10% finishes 1.34x entry share</span><span>going first 1.7 points better</span><span>54.4% adjusted for player skill</span></div>
             <p class="lead">Dark Angels climbed from 48.0% in the first period (19 Jun to 21 Jul) to
             54.1% in the latest (3 Oct to 25 Oct), one of 10 factions with a clear change over the
             period. Redemptor Dreadnought is in 8% of lists, and lists with it have a win rate 7.2
@@ -28355,7 +28831,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="t_au_empire-all">Whole edition</h3>
-            <div class="statline"><span class="big">51.8%<small>win rate, rank 6 of 28</small></span><span>12,041 games</span><span>3,381 lists from 1,910 players</span><span>top-10% finishes 1.23x entry share</span><span>going first 1.9 points better</span></div>
+            <div class="statline"><span class="big">51.8%<small>win rate, rank 6 of 28</small></span><span>12,041 games</span><span>3,381 lists from 1,910 players</span><span>top-10% finishes 1.23x entry share</span><span>going first 1.9 points better</span><span>52.7% adjusted for player skill</span></div>
             <p class="lead">The Unmasking Suite enhancement gives a win rate 8.1 points below other
             lists with the same detachment. Mont&#x27;ka lists have a win rate 3.1 points below the
             faction average and make up 26% of the faction's lists. T&#x27;au Empire won 51.8% of 12,041
@@ -31526,7 +32002,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="leagues_of_votann-all">Whole edition</h3>
-            <div class="statline"><span class="big">51.8%<small>win rate, rank 7 of 28</small></span><span>8,631 games</span><span>2,387 lists from 1,354 players</span><span>top-10% finishes 1.21x entry share</span><span>going first 2.8 points better</span></div>
+            <div class="statline"><span class="big">51.8%<small>win rate, rank 7 of 28</small></span><span>8,631 games</span><span>2,387 lists from 1,354 players</span><span>top-10% finishes 1.21x entry share</span><span>going first 2.8 points better</span><span>52.5% adjusted for player skill</span></div>
             <p class="lead">The pairing Farseekers + Needgaârd Oathband has a win rate 6.0 points above
             the faction average (216 lists). Einhyr Champion is in 30% of lists, and lists with it
             have a win rate 3.0 points below comparable lists. Leagues of Votann won 51.8% of 8,631
@@ -34580,7 +35056,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="necrons-all">Whole edition</h3>
-            <div class="statline"><span class="big">51.5%<small>win rate, rank 8 of 28</small></span><span>15,379 games</span><span>4,476 lists from 2,641 players</span><span>top-10% finishes 1.05x entry share</span><span>going first 1.3 points better</span></div>
+            <div class="statline"><span class="big">51.5%<small>win rate, rank 8 of 28</small></span><span>15,379 games</span><span>4,476 lists from 2,641 players</span><span>top-10% finishes 1.05x entry share</span><span>going first 1.3 points better</span><span>52.1% adjusted for player skill</span></div>
             <p class="lead">Canoptek Doomstalker is in 7% of lists, and lists with it have a win rate
             8.7 points below comparable lists. Hand of the Dynasty lists have a win rate 5.7 points
             below the faction average and make up 18% of the faction's lists. Necrons won 51.5% of
@@ -37829,7 +38305,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="emperor_s_children-all">Whole edition</h3>
-            <div class="statline"><span class="big">51.4%<small>win rate, rank 9 of 28</small></span><span>10,578 games</span><span>2,976 lists from 1,761 players</span><span>top-10% finishes 1.03x entry share</span><span>going first 2.4 points better</span></div>
+            <div class="statline"><span class="big">51.4%<small>win rate, rank 9 of 28</small></span><span>10,578 games</span><span>2,976 lists from 1,761 players</span><span>top-10% finishes 1.03x entry share</span><span>going first 2.4 points better</span><span>52.3% adjusted for player skill</span></div>
             <p class="lead">The Euphoric Crown enhancement gives a win rate 9.2 points below other
             lists with the same detachment. Spectacle of Slaughter lists have a win rate 4.6 points
             below the faction average and make up 21% of the faction's lists. Emperor&#x27;s Children
@@ -37840,8 +38316,8 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
           <div class="blk">
             <h4 id="emperor_s_children-enh">Enhancements</h4>
             <p>25 enhancements appear in 25 or more lists. The most common is Possessed Blade (17%
-            of lists). 2 enhancements differ from the other enhancements in their detachment: Euphoric
-            Crown (9.2 points below the rest) and Spiritsliver (9.1 points below the rest).</p>
+            of lists). One enhancement differs from the other enhancements in its detachment: Euphoric
+            Crown (9.2 points below the rest).</p>
             <div class="tw">
               <table>
                 <thead>
@@ -37916,13 +38392,6 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
                     <td class="n">4%</td>
                     <td class="n"><span class="eff neg"><span>-9.2 ± 2.2</span><i class="bar" style="width:36px"></i></span></td>
                     <td class="n"><span class="neg">-4.3</span></td>
-                  </tr>
-                  <tr>
-                    <td>Spiritsliver</td>
-                    <td class="n">60</td>
-                    <td class="n">2%</td>
-                    <td class="n"><span class="eff neg"><span>-9.1 ± 3.0</span><i class="bar" style="width:36px"></i></span></td>
-                    <td class="n"><span class="neg">-3.1</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -41128,7 +41597,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="adeptus_mechanicus-all">Whole edition</h3>
-            <div class="statline"><span class="big">50.6%<small>win rate, rank 10 of 28</small></span><span>5,802 games</span><span>1,603 lists from 945 players</span><span>top-10% finishes 1.01x entry share</span><span>going first 2.9 points better</span></div>
+            <div class="statline"><span class="big">50.6%<small>win rate, rank 10 of 28</small></span><span>5,802 games</span><span>1,603 lists from 945 players</span><span>top-10% finishes 1.01x entry share</span><span>going first 2.9 points better</span><span>50.8% adjusted for player skill</span></div>
             <p class="lead">Haloscreed Battle Clade lists have a win rate 10.8 points below the faction
             average and make up 10% of the faction's lists. The pairing Cohort Cybernetica + Eradication
             Cohort has a win rate 9.9 points above the faction average (166 lists). Adeptus Mechanicus
@@ -44466,11 +44935,11 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
       </section>
       <section class="sec" data-faction="thousand_sons" style="--accent:#1f6a86">
         <h2 class="fac" id="thousand_sons">Thousand Sons</h2>
-        <nav class="sub" aria-label="Thousand Sons sections"><strong class="who">Thousand Sons</strong><a href="#thousand_sons-all">Whole edition</a><a href="#thousand_sons-time">Over time</a><a href="#thousand_sons-combo">Combinations</a><a href="#thousand_sons-det">Detachments</a><a href="#thousand_sons-enh">Enhancements</a><a href="#thousand_sons-units">Units</a><a href="#thousand_sons-shift">Pick-rate shifts</a><a href="#thousand_sons-match">Matchups</a><a href="#thousand_sons-brackets">Results brackets</a><a href="#thousand_sons-fd">Force Disposition</a><a href="#thousand_sons-lists">Lists</a><a href="#thousand_sons-team">Team events</a><a href="#thousand_sons-milestones">Milestones</a><a href="#thousand_sons-ms-2026-07-22">22 Jul</a><a href="#thousand_sons-ms-2026-08-26">26 Aug</a><a href="#thousand_sons-ms-2026-09-05">5 Sep</a><a href="#thousand_sons-ms-2026-10-03">3 Oct</a><a href="#thousand_sons-ms-2026-10-17">17 Oct</a></nav>
+        <nav class="sub" aria-label="Thousand Sons sections"><strong class="who">Thousand Sons</strong><a href="#thousand_sons-all">Whole edition</a><a href="#thousand_sons-time">Over time</a><a href="#thousand_sons-combo">Combinations</a><a href="#thousand_sons-det">Detachments</a><a href="#thousand_sons-units">Units</a><a href="#thousand_sons-shift">Pick-rate shifts</a><a href="#thousand_sons-match">Matchups</a><a href="#thousand_sons-brackets">Results brackets</a><a href="#thousand_sons-enh">Enhancements</a><a href="#thousand_sons-fd">Force Disposition</a><a href="#thousand_sons-lists">Lists</a><a href="#thousand_sons-team">Team events</a><a href="#thousand_sons-milestones">Milestones</a><a href="#thousand_sons-ms-2026-07-22">22 Jul</a><a href="#thousand_sons-ms-2026-08-26">26 Aug</a><a href="#thousand_sons-ms-2026-09-05">5 Sep</a><a href="#thousand_sons-ms-2026-10-03">3 Oct</a><a href="#thousand_sons-ms-2026-10-17">17 Oct</a></nav>
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="thousand_sons-all">Whole edition</h3>
-            <div class="statline"><span class="big">50.3%<small>win rate, rank 11 of 28</small></span><span>8,243 games</span><span>2,335 lists from 1,401 players</span><span>top-10% finishes 1.29x entry share</span><span>going first 5.8 points better</span></div>
+            <div class="statline"><span class="big">50.3%<small>win rate, rank 11 of 28</small></span><span>8,243 games</span><span>2,335 lists from 1,401 players</span><span>top-10% finishes 1.29x entry share</span><span>going first 5.8 points better</span><span>50.6% adjusted for player skill</span></div>
             <p class="lead">Thousand Sons fell from 56.9% in the first period (19 Jun to 21 Jul) to
             40.3% in the latest (3 Oct to 25 Oct), one of 10 factions with a clear change over the
             period. The pairing Hexwarp Thrallband + Sekhetar Cohort has a win rate 14.1 points above
@@ -44838,91 +45307,6 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
                     <td class="n">1%</td>
                     <td class="n">1%</td>
                     <td class="n">3%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="tcap"><a href="#tables">How to read the tables</a></div>
-          </div>
-          <div class="blk">
-            <h4 id="thousand_sons-enh">Enhancements</h4>
-            <p>24 enhancements appear in 25 or more lists. The most common is Umbralefic Crystal (34%
-            of lists). One enhancement differs from the other enhancements in its detachment: Biomechanical
-            Mutation (6.9 points below the rest).</p>
-            <div class="tw">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Enhancement</th>
-                    <th class="n">Lists</th>
-                    <th class="n">Pick</th>
-                    <th class="n">Effect on win rate (pp)</th>
-                    <th class="n">z</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Umbralefic Crystal</td>
-                    <td class="n">783</td>
-                    <td class="n">34%</td>
-                    <td class="n"><span class="eff "><span>-0.0 ± 0.9</span><i class="bar" style="width:0px"></i></span></td>
-                    <td class="n"><span>-0.0</span></td>
-                  </tr>
-                  <tr>
-                    <td>Eldritch Vortex of E&#x27;Taph</td>
-                    <td class="n">714</td>
-                    <td class="n">31%</td>
-                    <td class="n"><span class="eff "><span>+1.4 ± 0.9</span><i class="bar" style="width:5px"></i></span></td>
-                    <td class="n"><span>+1.5</span></td>
-                  </tr>
-                  <tr>
-                    <td>Incandaeum</td>
-                    <td class="n">323</td>
-                    <td class="n">14%</td>
-                    <td class="n"><span class="eff "><span>+0.9 ± 1.5</span><i class="bar" style="width:3px"></i></span></td>
-                    <td class="n"><span>+0.6</span></td>
-                  </tr>
-                  <tr>
-                    <td>Empyric Onslaught</td>
-                    <td class="n">276</td>
-                    <td class="n">12%</td>
-                    <td class="n"><span class="eff "><span>+1.7 ± 1.4</span><i class="bar" style="width:6px"></i></span></td>
-                    <td class="n"><span>+1.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Risen Rubricae</td>
-                    <td class="n">247</td>
-                    <td class="n">11%</td>
-                    <td class="n"><span class="eff "><span>-1.1 ± 1.7</span><i class="bar" style="width:4px"></i></span></td>
-                    <td class="n"><span>-0.7</span></td>
-                  </tr>
-                  <tr>
-                    <td>Lord of the Rubricae</td>
-                    <td class="n">215</td>
-                    <td class="n">9%</td>
-                    <td class="n"><span class="eff "><span>-1.1 ± 1.7</span><i class="bar" style="width:4px"></i></span></td>
-                    <td class="n"><span>-0.6</span></td>
-                  </tr>
-                  <tr>
-                    <td>Arcane Thralls</td>
-                    <td class="n">210</td>
-                    <td class="n">9%</td>
-                    <td class="n"><span class="eff "><span>+1.7 ± 1.7</span><i class="bar" style="width:6px"></i></span></td>
-                    <td class="n"><span>+1.0</span></td>
-                  </tr>
-                  <tr>
-                    <td>Curse of Life</td>
-                    <td class="n">171</td>
-                    <td class="n">7%</td>
-                    <td class="n"><span class="eff "><span>-4.2 ± 1.9</span><i class="bar" style="width:16px"></i></span></td>
-                    <td class="n"><span>-2.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Biomechanical Mutation</td>
-                    <td class="n">101</td>
-                    <td class="n">4%</td>
-                    <td class="n"><span class="eff neg"><span>-6.9 ± 2.3</span><i class="bar" style="width:27px"></i></span></td>
-                    <td class="n"><span class="neg">-3.0</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -45707,6 +46091,86 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
             </details>
           </div>
           <div class="blk">
+            <h4 id="thousand_sons-enh">Enhancements</h4>
+            <p>24 enhancements appear in 25 or more lists. The most common is Umbralefic Crystal (34%
+            of lists).</p>
+            <details>
+              <summary>Enhancement table</summary>
+              <div class="tw">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Enhancement</th>
+                      <th class="n">Lists</th>
+                      <th class="n">Pick</th>
+                      <th class="n">Effect on win rate (pp)</th>
+                      <th class="n">z</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Umbralefic Crystal</td>
+                      <td class="n">783</td>
+                      <td class="n">34%</td>
+                      <td class="n"><span class="eff "><span>-0.0 ± 0.9</span><i class="bar" style="width:0px"></i></span></td>
+                      <td class="n"><span>-0.0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Eldritch Vortex of E&#x27;Taph</td>
+                      <td class="n">714</td>
+                      <td class="n">31%</td>
+                      <td class="n"><span class="eff "><span>+1.4 ± 0.9</span><i class="bar" style="width:5px"></i></span></td>
+                      <td class="n"><span>+1.5</span></td>
+                    </tr>
+                    <tr>
+                      <td>Incandaeum</td>
+                      <td class="n">323</td>
+                      <td class="n">14%</td>
+                      <td class="n"><span class="eff "><span>+0.9 ± 1.5</span><i class="bar" style="width:3px"></i></span></td>
+                      <td class="n"><span>+0.6</span></td>
+                    </tr>
+                    <tr>
+                      <td>Empyric Onslaught</td>
+                      <td class="n">276</td>
+                      <td class="n">12%</td>
+                      <td class="n"><span class="eff "><span>+1.7 ± 1.4</span><i class="bar" style="width:6px"></i></span></td>
+                      <td class="n"><span>+1.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Risen Rubricae</td>
+                      <td class="n">247</td>
+                      <td class="n">11%</td>
+                      <td class="n"><span class="eff "><span>-1.1 ± 1.7</span><i class="bar" style="width:4px"></i></span></td>
+                      <td class="n"><span>-0.7</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lord of the Rubricae</td>
+                      <td class="n">215</td>
+                      <td class="n">9%</td>
+                      <td class="n"><span class="eff "><span>-1.1 ± 1.7</span><i class="bar" style="width:4px"></i></span></td>
+                      <td class="n"><span>-0.6</span></td>
+                    </tr>
+                    <tr>
+                      <td>Arcane Thralls</td>
+                      <td class="n">210</td>
+                      <td class="n">9%</td>
+                      <td class="n"><span class="eff "><span>+1.7 ± 1.7</span><i class="bar" style="width:6px"></i></span></td>
+                      <td class="n"><span>+1.0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Curse of Life</td>
+                      <td class="n">171</td>
+                      <td class="n">7%</td>
+                      <td class="n"><span class="eff "><span>-4.2 ± 1.9</span><i class="bar" style="width:16px"></i></span></td>
+                      <td class="n"><span>-2.2</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tcap"><a href="#tables">How to read the tables</a></div>
+            </details>
+          </div>
+          <div class="blk">
             <h4 id="thousand_sons-fd">Force Disposition</h4>
             <details>
               <summary>Force Disposition table</summary>
@@ -45762,8 +46226,8 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
               </div>
               <div class="tcap"><a href="#tables">How to read the tables</a></div>
             </details>
-            <p class="closing">Nothing clear turned up in matchups against the strength model, Force
-            Disposition, results brackets, terrain layout and list width.</p>
+            <p class="closing">Nothing clear turned up in matchups against the strength model, enhancement
+            effects, Force Disposition, results brackets, terrain layout and list width.</p>
           </div>
           <div class="blk">
             <h4 id="thousand_sons-lists">Representative lists</h4>
@@ -47577,11 +48041,11 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
       </section>
       <section class="sec" data-faction="adepta_sororitas" style="--accent:#8e2a3c">
         <h2 class="fac" id="adepta_sororitas">Adepta Sororitas</h2>
-        <nav class="sub" aria-label="Adepta Sororitas sections"><strong class="who">Adepta Sororitas</strong><a href="#adepta_sororitas-all">Whole edition</a><a href="#adepta_sororitas-det">Detachments</a><a href="#adepta_sororitas-time">Over time</a><a href="#adepta_sororitas-units">Units</a><a href="#adepta_sororitas-combo">Combinations</a><a href="#adepta_sororitas-fd">Force Disposition</a><a href="#adepta_sororitas-enh">Enhancements</a><a href="#adepta_sororitas-shift">Pick-rate shifts</a><a href="#adepta_sororitas-match">Matchups</a><a href="#adepta_sororitas-brackets">Results brackets</a><a href="#adepta_sororitas-lists">Lists</a><a href="#adepta_sororitas-team">Team events</a><a href="#adepta_sororitas-milestones">Milestones</a><a href="#adepta_sororitas-ms-2026-07-22">22 Jul</a><a href="#adepta_sororitas-ms-2026-08-26">26 Aug</a><a href="#adepta_sororitas-ms-2026-09-05">5 Sep</a><a href="#adepta_sororitas-ms-2026-10-03">3 Oct</a><a href="#adepta_sororitas-ms-2026-10-17">17 Oct</a></nav>
+        <nav class="sub" aria-label="Adepta Sororitas sections"><strong class="who">Adepta Sororitas</strong><a href="#adepta_sororitas-all">Whole edition</a><a href="#adepta_sororitas-det">Detachments</a><a href="#adepta_sororitas-time">Over time</a><a href="#adepta_sororitas-units">Units</a><a href="#adepta_sororitas-combo">Combinations</a><a href="#adepta_sororitas-fd">Force Disposition</a><a href="#adepta_sororitas-shift">Pick-rate shifts</a><a href="#adepta_sororitas-match">Matchups</a><a href="#adepta_sororitas-brackets">Results brackets</a><a href="#adepta_sororitas-enh">Enhancements</a><a href="#adepta_sororitas-lists">Lists</a><a href="#adepta_sororitas-team">Team events</a><a href="#adepta_sororitas-milestones">Milestones</a><a href="#adepta_sororitas-ms-2026-07-22">22 Jul</a><a href="#adepta_sororitas-ms-2026-08-26">26 Aug</a><a href="#adepta_sororitas-ms-2026-09-05">5 Sep</a><a href="#adepta_sororitas-ms-2026-10-03">3 Oct</a><a href="#adepta_sororitas-ms-2026-10-17">17 Oct</a></nav>
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="adepta_sororitas-all">Whole edition</h3>
-            <div class="statline"><span class="big">50.2%<small>win rate, rank 12 of 28</small></span><span>5,872 games</span><span>1,652 lists from 1,010 players</span><span>top-10% finishes 1.07x entry share</span><span>going first 2.0 points better</span></div>
+            <div class="statline"><span class="big">50.2%<small>win rate, rank 12 of 28</small></span><span>5,872 games</span><span>1,652 lists from 1,010 players</span><span>top-10% finishes 1.07x entry share</span><span>going first 2.0 points better</span><span>50.3% adjusted for player skill</span></div>
             <p class="lead">Army of Faith lists have a win rate 7.0 points below the faction average
             and make up 15% of the faction's lists. Adepta Sororitas climbed from 46.4% in the first
             period (19 Jun to 21 Jul) to 53.7% in the latest (3 Oct to 25 Oct), one of 10 factions
@@ -48237,91 +48701,6 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
             <div class="tcap"><a href="#tables">How to read the tables</a></div>
           </div>
           <div class="blk">
-            <h4 id="adepta_sororitas-enh">Enhancements</h4>
-            <p>21 enhancements appear in 25 or more lists. The most common is Through Suffering, Strength
-            (22% of lists). One enhancement differs from the other enhancements in its detachment:
-            Fire and Fury (10.8 points below the rest).</p>
-            <div class="tw">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Enhancement</th>
-                    <th class="n">Lists</th>
-                    <th class="n">Pick</th>
-                    <th class="n">Effect on win rate (pp)</th>
-                    <th class="n">z</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Through Suffering, Strength</td>
-                    <td class="n">370</td>
-                    <td class="n">22%</td>
-                    <td class="n"><span class="eff "><span>+1.6 ± 1.2</span><i class="bar" style="width:6px"></i></span></td>
-                    <td class="n"><span>+1.3</span></td>
-                  </tr>
-                  <tr>
-                    <td>Saintly Example</td>
-                    <td class="n">345</td>
-                    <td class="n">21%</td>
-                    <td class="n"><span class="eff "><span>+0.8 ± 1.3</span><i class="bar" style="width:3px"></i></span></td>
-                    <td class="n"><span>+0.6</span></td>
-                  </tr>
-                  <tr>
-                    <td>Symphonic Payload</td>
-                    <td class="n">312</td>
-                    <td class="n">19%</td>
-                    <td class="n"><span class="eff "><span>+0.3 ± 1.4</span><i class="bar" style="width:1px"></i></span></td>
-                    <td class="n"><span>+0.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Litanies of Faith</td>
-                    <td class="n">131</td>
-                    <td class="n">8%</td>
-                    <td class="n"><span class="eff "><span>-3.5 ± 2.1</span><i class="bar" style="width:13px"></i></span></td>
-                    <td class="n"><span>-1.7</span></td>
-                  </tr>
-                  <tr>
-                    <td>Clarion of Urgency</td>
-                    <td class="n">130</td>
-                    <td class="n">8%</td>
-                    <td class="n"><span class="eff "><span>-4.0 ± 2.3</span><i class="bar" style="width:15px"></i></span></td>
-                    <td class="n"><span>-1.8</span></td>
-                  </tr>
-                  <tr>
-                    <td>Writ of Compunction</td>
-                    <td class="n">115</td>
-                    <td class="n">7%</td>
-                    <td class="n"><span class="eff "><span>-4.3 ± 2.2</span><i class="bar" style="width:17px"></i></span></td>
-                    <td class="n"><span>-2.0</span></td>
-                  </tr>
-                  <tr>
-                    <td>Catechism of Divine Penitence</td>
-                    <td class="n">113</td>
-                    <td class="n">7%</td>
-                    <td class="n"><span class="eff "><span>-0.5 ± 2.6</span><i class="bar" style="width:2px"></i></span></td>
-                    <td class="n"><span>-0.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Perfervid Haste</td>
-                    <td class="n">101</td>
-                    <td class="n">6%</td>
-                    <td class="n"><span class="eff "><span>+2.3 ± 2.5</span><i class="bar" style="width:9px"></i></span></td>
-                    <td class="n"><span>+0.9</span></td>
-                  </tr>
-                  <tr>
-                    <td>Fire and Fury</td>
-                    <td class="n">57</td>
-                    <td class="n">3%</td>
-                    <td class="n"><span class="eff neg"><span>-10.8 ± 3.5</span><i class="bar" style="width:43px"></i></span></td>
-                    <td class="n"><span class="neg">-3.1</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="tcap"><a href="#tables">How to read the tables</a></div>
-          </div>
-          <div class="blk">
             <h4 id="adepta_sororitas-shift">Pick-rate shifts</h4>
             <div class="tw">
               <table>
@@ -48880,10 +49259,90 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
               </div>
               <div class="tcap"><a href="#tables">How to read the tables</a></div>
             </details>
+          </div>
+          <div class="blk">
+            <h4 id="adepta_sororitas-enh">Enhancements</h4>
+            <p>21 enhancements appear in 25 or more lists. The most common is Through Suffering, Strength
+            (22% of lists).</p>
+            <details>
+              <summary>Enhancement table</summary>
+              <div class="tw">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Enhancement</th>
+                      <th class="n">Lists</th>
+                      <th class="n">Pick</th>
+                      <th class="n">Effect on win rate (pp)</th>
+                      <th class="n">z</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Through Suffering, Strength</td>
+                      <td class="n">370</td>
+                      <td class="n">22%</td>
+                      <td class="n"><span class="eff "><span>+1.6 ± 1.2</span><i class="bar" style="width:6px"></i></span></td>
+                      <td class="n"><span>+1.3</span></td>
+                    </tr>
+                    <tr>
+                      <td>Saintly Example</td>
+                      <td class="n">345</td>
+                      <td class="n">21%</td>
+                      <td class="n"><span class="eff "><span>+0.8 ± 1.3</span><i class="bar" style="width:3px"></i></span></td>
+                      <td class="n"><span>+0.6</span></td>
+                    </tr>
+                    <tr>
+                      <td>Symphonic Payload</td>
+                      <td class="n">312</td>
+                      <td class="n">19%</td>
+                      <td class="n"><span class="eff "><span>+0.3 ± 1.4</span><i class="bar" style="width:1px"></i></span></td>
+                      <td class="n"><span>+0.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Litanies of Faith</td>
+                      <td class="n">131</td>
+                      <td class="n">8%</td>
+                      <td class="n"><span class="eff "><span>-3.5 ± 2.1</span><i class="bar" style="width:13px"></i></span></td>
+                      <td class="n"><span>-1.7</span></td>
+                    </tr>
+                    <tr>
+                      <td>Clarion of Urgency</td>
+                      <td class="n">130</td>
+                      <td class="n">8%</td>
+                      <td class="n"><span class="eff "><span>-4.0 ± 2.3</span><i class="bar" style="width:15px"></i></span></td>
+                      <td class="n"><span>-1.8</span></td>
+                    </tr>
+                    <tr>
+                      <td>Writ of Compunction</td>
+                      <td class="n">115</td>
+                      <td class="n">7%</td>
+                      <td class="n"><span class="eff "><span>-4.3 ± 2.2</span><i class="bar" style="width:17px"></i></span></td>
+                      <td class="n"><span>-2.0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Catechism of Divine Penitence</td>
+                      <td class="n">113</td>
+                      <td class="n">7%</td>
+                      <td class="n"><span class="eff "><span>-0.5 ± 2.6</span><i class="bar" style="width:2px"></i></span></td>
+                      <td class="n"><span>-0.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Perfervid Haste</td>
+                      <td class="n">101</td>
+                      <td class="n">6%</td>
+                      <td class="n"><span class="eff "><span>+2.3 ± 2.5</span><i class="bar" style="width:9px"></i></span></td>
+                      <td class="n"><span>+0.9</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tcap"><a href="#tables">How to read the tables</a></div>
+            </details>
             <p class="closing">Each extra 2.3 distinct units in a list goes with a win rate 5.6 points
             lower; the average list has 12.4. The five most active players account for 3.3% of its
             games. Nothing clear turned up in matchups against the strength model, milestone moves,
-            results brackets and terrain layout.</p>
+            enhancement effects, results brackets and terrain layout.</p>
           </div>
           <div class="blk">
             <h4 id="adepta_sororitas-lists">Representative lists</h4>
@@ -50670,7 +51129,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="world_eaters-all">Whole edition</h3>
-            <div class="statline"><span class="big">49.9%<small>win rate, rank 13 of 28</small></span><span>10,560 games</span><span>3,116 lists from 1,883 players</span><span>top-10% finishes 0.78x entry share</span><span>going first 0.9 points better</span></div>
+            <div class="statline"><span class="big">49.9%<small>win rate, rank 13 of 28</small></span><span>10,560 games</span><span>3,116 lists from 1,883 players</span><span>top-10% finishes 0.78x entry share</span><span>going first 0.9 points better</span><span>49.9% adjusted for player skill</span></div>
             <p class="lead">World Eaters climbed from 44.5% in the first period (19 Jun to 21 Jul)
             to 54.5% in the latest (3 Oct to 25 Oct), one of 10 factions with a clear change over the
             period. Berzerker Warband lists have a win rate 2.5 points above the faction average and
@@ -54051,7 +54510,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="tyranids-all">Whole edition</h3>
-            <div class="statline"><span class="big">49.8%<small>win rate, rank 14 of 28</small></span><span>13,907 games</span><span>4,058 lists from 2,452 players</span><span>top-10% finishes 0.87x entry share</span><span>going first 1.2 points better</span></div>
+            <div class="statline"><span class="big">49.8%<small>win rate, rank 14 of 28</small></span><span>13,907 games</span><span>4,058 lists from 2,452 players</span><span>top-10% finishes 0.87x entry share</span><span>going first 1.2 points better</span><span>49.7% adjusted for player skill</span></div>
             <p class="lead">The pairing Assimilation Swarm + Talons of the Norn Queen has a win rate
             6.6 points above the faction average (729 lists). Against Imperial Knights it wins 41.3%
             over 569 games, 10.0 points below what its strength predicts. Tyranids won 49.8% of 13,907
@@ -54572,7 +55031,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
             Whip (2.4 points above comparable lists, 40% of lists), Hyperadapted Raveners (2.2 points
             above comparable lists, 40% of lists) and Raveners (2.1 points above comparable lists,
             37% of lists). Hive Guard is in under 10% of lists but has a win rate above the faction
-            average. Termagants is in at least 15% of lists but has a win rate below it.</p>
+            average.</p>
             <figure role="img" aria-label="Units and detachments of Tyranids by share of lists and effect on win rate: 5 units and 2 detachments have a clear effect.">
               <div class="pair">
                 <svg viewBox="0 0 380 240" role="presentation" focusable="false">
@@ -57391,7 +57850,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="space_wolves-all">Whole edition</h3>
-            <div class="statline"><span class="big">49.1%<small>win rate, rank 15 of 28</small></span><span>6,520 games</span><span>1,868 lists from 1,160 players</span><span>top-10% finishes 0.83x entry share</span><span>going first 2.0 points better</span></div>
+            <div class="statline"><span class="big">49.1%<small>win rate, rank 15 of 28</small></span><span>6,520 games</span><span>1,868 lists from 1,160 players</span><span>top-10% finishes 0.83x entry share</span><span>going first 2.0 points better</span><span>48.7% adjusted for player skill</span></div>
             <p class="lead">Champions of Fenris lists have a win rate 7.6 points below the faction
             average and make up 7% of the faction's lists. The pairing Champions of Fenris + Saga of
             the Beastslayer has a win rate 16.0 points below the faction average (34 lists). Space
@@ -57718,8 +58177,8 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
             Best: Eradicator Squad with Melta Rifles (9.0 points above comparable lists, 4% of lists),
             Impulsor (6.6 points above comparable lists, 9% of lists), Terminator Assault Squad (3.9
             points above comparable lists, 20% of lists) and Scout Squad (2.7 points above comparable
-            lists, 37% of lists). Company Heroes, Eradicator Squad with Melta Rifles and Impulsor are
-            in under 10% of lists but have a win rate above the faction average.</p>
+            lists, 37% of lists). Eradicator Squad with Melta Rifles and Impulsor are in under 10%
+            of lists but have a win rate above the faction average.</p>
             <figure role="img" aria-label="Units and detachments of Space Wolves by share of lists and effect on win rate: 4 units and one detachment have a clear effect.">
               <div class="pair">
                 <svg viewBox="0 0 380 240" role="presentation" focusable="false">
@@ -60950,18 +61409,17 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
       </section>
       <section class="sec" data-faction="imperial_knights" style="--accent:#2f4f8f">
         <h2 class="fac" id="imperial_knights">Imperial Knights</h2>
-        <nav class="sub" aria-label="Imperial Knights sections"><strong class="who">Imperial Knights</strong><a href="#imperial_knights-all">Whole edition</a><a href="#imperial_knights-match">Matchups</a><a href="#imperial_knights-time">Over time</a><a href="#imperial_knights-fd">Force Disposition</a><a href="#imperial_knights-enh">Enhancements</a><a href="#imperial_knights-shift">Pick-rate shifts</a><a href="#imperial_knights-brackets">Results brackets</a><a href="#imperial_knights-units">Units</a><a href="#imperial_knights-det">Detachments</a><a href="#imperial_knights-combo">Combinations</a><a href="#imperial_knights-lists">Lists</a><a href="#imperial_knights-team">Team events</a><a href="#imperial_knights-milestones">Milestones</a><a href="#imperial_knights-ms-2026-07-22">22 Jul</a><a href="#imperial_knights-ms-2026-08-26">26 Aug</a><a href="#imperial_knights-ms-2026-09-05">5 Sep</a><a href="#imperial_knights-ms-2026-10-03">3 Oct</a><a href="#imperial_knights-ms-2026-10-17">17 Oct</a></nav>
+        <nav class="sub" aria-label="Imperial Knights sections"><strong class="who">Imperial Knights</strong><a href="#imperial_knights-all">Whole edition</a><a href="#imperial_knights-match">Matchups</a><a href="#imperial_knights-time">Over time</a><a href="#imperial_knights-fd">Force Disposition</a><a href="#imperial_knights-shift">Pick-rate shifts</a><a href="#imperial_knights-brackets">Results brackets</a><a href="#imperial_knights-units">Units</a><a href="#imperial_knights-det">Detachments</a><a href="#imperial_knights-combo">Combinations</a><a href="#imperial_knights-enh">Enhancements</a><a href="#imperial_knights-lists">Lists</a><a href="#imperial_knights-team">Team events</a><a href="#imperial_knights-milestones">Milestones</a><a href="#imperial_knights-ms-2026-07-22">22 Jul</a><a href="#imperial_knights-ms-2026-08-26">26 Aug</a><a href="#imperial_knights-ms-2026-09-05">5 Sep</a><a href="#imperial_knights-ms-2026-10-03">3 Oct</a><a href="#imperial_knights-ms-2026-10-17">17 Oct</a></nav>
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="imperial_knights-all">Whole edition</h3>
-            <div class="statline"><span class="big">48.6%<small>win rate, rank 16 of 28</small></span><span>9,758 games</span><span>2,749 lists from 1,671 players</span><span>top-10% finishes 0.78x entry share</span><span>going first 1.6 points better</span></div>
+            <div class="statline"><span class="big">48.6%<small>win rate, rank 16 of 28</small></span><span>9,758 games</span><span>2,749 lists from 1,671 players</span><span>top-10% finishes 0.78x entry share</span><span>going first 1.6 points better</span><span>48.3% adjusted for player skill</span></div>
             <p class="lead">Against Tyranids it wins 58.7% over 569 games, 10.0 points above what its
             strength predicts. Imperial Knights fell from 53.0% in the first period (19 Jun to 21 Jul)
             to 46.5% in the latest (3 Oct to 25 Oct), one of 10 factions with a clear change over the
             period. The season figure is 48.6% (rank 16 of 28, 9,758 games), which overstates where
             it stands now. Gate Warden Lance went from 44% to 8% of the faction's lists between the
-            first period and the last 28 days. The Hunter&#x27;s Eye enhancement gives a win rate 2.9
-            points above other lists with the same detachment.</p>
+            first period and the last 28 days.</p>
           </div>
           <div class="blk">
             <h4 id="imperial_knights-match">Matchups</h4>
@@ -61457,84 +61915,6 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
                     <td class="n">220</td>
                     <td class="n">43.2%</td>
                     <td class="n">n/a</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="tcap"><a href="#tables">How to read the tables</a></div>
-          </div>
-          <div class="blk">
-            <h4 id="imperial_knights-enh">Enhancements</h4>
-            <p>21 enhancements appear in 25 or more lists. The most common is Archeotech Autoloaders
-            (26% of lists). One enhancement differs from the other enhancements in its detachment:
-            Hunter&#x27;s Eye (2.9 points above the rest).</p>
-            <div class="tw">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Enhancement</th>
-                    <th class="n">Lists</th>
-                    <th class="n">Pick</th>
-                    <th class="n">Effect on win rate (pp)</th>
-                    <th class="n">z</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Archeotech Autoloaders</td>
-                    <td class="n">717</td>
-                    <td class="n">26%</td>
-                    <td class="n"><span class="eff "><span>-0.1 ± 0.9</span><i class="bar" style="width:0px"></i></span></td>
-                    <td class="n"><span>-0.1</span></td>
-                  </tr>
-                  <tr>
-                    <td>Hunter&#x27;s Eye</td>
-                    <td class="n">647</td>
-                    <td class="n">24%</td>
-                    <td class="n"><span class="eff pos"><span>+2.9 ± 1.0</span><i class="bar" style="width:11px"></i></span></td>
-                    <td class="n"><span class="pos">+3.0</span></td>
-                  </tr>
-                  <tr>
-                    <td>Bringer of Justice</td>
-                    <td class="n">522</td>
-                    <td class="n">19%</td>
-                    <td class="n"><span class="eff "><span>+1.3 ± 1.1</span><i class="bar" style="width:5px"></i></span></td>
-                    <td class="n"><span>+1.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Mysterious Guardian</td>
-                    <td class="n">504</td>
-                    <td class="n">18%</td>
-                    <td class="n"><span class="eff "><span>+2.4 ± 1.1</span><i class="bar" style="width:9px"></i></span></td>
-                    <td class="n"><span>+2.1</span></td>
-                  </tr>
-                  <tr>
-                    <td>Bearer of the Judicant&#x27;s Helm</td>
-                    <td class="n">447</td>
-                    <td class="n">16%</td>
-                    <td class="n"><span class="eff "><span>+1.3 ± 1.1</span><i class="bar" style="width:5px"></i></span></td>
-                    <td class="n"><span>+1.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Augury Halo</td>
-                    <td class="n">336</td>
-                    <td class="n">12%</td>
-                    <td class="n"><span class="eff "><span>+1.7 ± 1.4</span><i class="bar" style="width:6px"></i></span></td>
-                    <td class="n"><span>+1.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Sanctuary</td>
-                    <td class="n">267</td>
-                    <td class="n">10%</td>
-                    <td class="n"><span class="eff "><span>-0.2 ± 1.6</span><i class="bar" style="width:0px"></i></span></td>
-                    <td class="n"><span>-0.1</span></td>
-                  </tr>
-                  <tr>
-                    <td>Bearer of the Iron Chalice</td>
-                    <td class="n">247</td>
-                    <td class="n">9%</td>
-                    <td class="n"><span class="eff "><span>-2.8 ± 1.5</span><i class="bar" style="width:11px"></i></span></td>
-                    <td class="n"><span>-1.9</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -62160,8 +62540,88 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
               </div>
               <div class="tcap"><a href="#tables">How to read the tables</a></div>
             </details>
+          </div>
+          <div class="blk">
+            <h4 id="imperial_knights-enh">Enhancements</h4>
+            <p>21 enhancements appear in 25 or more lists. The most common is Archeotech Autoloaders
+            (26% of lists).</p>
+            <details>
+              <summary>Enhancement table</summary>
+              <div class="tw">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Enhancement</th>
+                      <th class="n">Lists</th>
+                      <th class="n">Pick</th>
+                      <th class="n">Effect on win rate (pp)</th>
+                      <th class="n">z</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Archeotech Autoloaders</td>
+                      <td class="n">717</td>
+                      <td class="n">26%</td>
+                      <td class="n"><span class="eff "><span>-0.1 ± 0.9</span><i class="bar" style="width:0px"></i></span></td>
+                      <td class="n"><span>-0.1</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hunter&#x27;s Eye</td>
+                      <td class="n">647</td>
+                      <td class="n">24%</td>
+                      <td class="n"><span class="eff "><span>+2.9 ± 1.0</span><i class="bar" style="width:11px"></i></span></td>
+                      <td class="n"><span>+3.0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Bringer of Justice</td>
+                      <td class="n">522</td>
+                      <td class="n">19%</td>
+                      <td class="n"><span class="eff "><span>+1.3 ± 1.1</span><i class="bar" style="width:5px"></i></span></td>
+                      <td class="n"><span>+1.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Mysterious Guardian</td>
+                      <td class="n">504</td>
+                      <td class="n">18%</td>
+                      <td class="n"><span class="eff "><span>+2.4 ± 1.1</span><i class="bar" style="width:9px"></i></span></td>
+                      <td class="n"><span>+2.1</span></td>
+                    </tr>
+                    <tr>
+                      <td>Bearer of the Judicant&#x27;s Helm</td>
+                      <td class="n">447</td>
+                      <td class="n">16%</td>
+                      <td class="n"><span class="eff "><span>+1.3 ± 1.1</span><i class="bar" style="width:5px"></i></span></td>
+                      <td class="n"><span>+1.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Augury Halo</td>
+                      <td class="n">336</td>
+                      <td class="n">12%</td>
+                      <td class="n"><span class="eff "><span>+1.7 ± 1.4</span><i class="bar" style="width:6px"></i></span></td>
+                      <td class="n"><span>+1.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Sanctuary</td>
+                      <td class="n">267</td>
+                      <td class="n">10%</td>
+                      <td class="n"><span class="eff "><span>-0.2 ± 1.6</span><i class="bar" style="width:0px"></i></span></td>
+                      <td class="n"><span>-0.1</span></td>
+                    </tr>
+                    <tr>
+                      <td>Bearer of the Iron Chalice</td>
+                      <td class="n">247</td>
+                      <td class="n">9%</td>
+                      <td class="n"><span class="eff "><span>-2.8 ± 1.5</span><i class="bar" style="width:11px"></i></span></td>
+                      <td class="n"><span>-1.9</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tcap"><a href="#tables">How to read the tables</a></div>
+            </details>
             <p class="closing">Nothing clear turned up in unit effects, detachment effects, combination
-            effects, results brackets, terrain layout and list width.</p>
+            effects, enhancement effects, results brackets, terrain layout and list width.</p>
           </div>
           <div class="blk">
             <h4 id="imperial_knights-lists">Representative lists</h4>
@@ -63903,7 +64363,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="space_marines__astartes_-all">Whole edition</h3>
-            <div class="statline"><span class="big">48.6%<small>win rate, rank 17 of 28</small></span><span>18,737 games</span><span>5,866 lists from 3,678 players</span><span>top-10% finishes 1.03x entry share</span><span>going first 1.8 points better</span></div>
+            <div class="statline"><span class="big">48.6%<small>win rate, rank 17 of 28</small></span><span>18,737 games</span><span>5,866 lists from 3,678 players</span><span>top-10% finishes 1.03x entry share</span><span>going first 1.8 points better</span><span>47.9% adjusted for player skill</span></div>
             <p class="lead">The pairing Assault Brethren + Deathwatch Support + Terminator Storm Force
             has a win rate 20.0 points above the faction average (135 lists). The Blackwing Shroud
             enhancement gives a win rate 11.8 points below other lists with the same detachment. Space
@@ -64353,8 +64813,8 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
             (8.2 points below comparable lists, 4% of lists) and Captain In Terminator Armour (7.8
             points below comparable lists, 7% of lists). Captain on Bike, Kor’sarro Khan, Suboden Khan
             and Chief Librarian Tigurius are in under 10% of lists but have a win rate above the faction
-            average. Redemptor Dreadnought, Terminator Squad and Gladiator Lancer are in at least 15%
-            of lists but have a win rate below it.</p>
+            average. Redemptor Dreadnought and Terminator Squad are in at least 15% of lists but have
+            a win rate below it.</p>
             <figure role="img" aria-label="Units and detachments of Space Marines by share of lists and effect on win rate: 20 units and 12 detachments have a clear effect.">
               <div class="pair">
                 <svg viewBox="0 0 380 240" role="presentation" focusable="false">
@@ -68166,7 +68626,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="death_guard-all">Whole edition</h3>
-            <div class="statline"><span class="big">48.1%<small>win rate, rank 18 of 28</small></span><span>10,233 games</span><span>2,983 lists from 1,891 players</span><span>top-10% finishes 0.70x entry share</span><span>going first 3.4 points better</span></div>
+            <div class="statline"><span class="big">48.1%<small>win rate, rank 18 of 28</small></span><span>10,233 games</span><span>2,983 lists from 1,891 players</span><span>top-10% finishes 0.70x entry share</span><span>going first 3.4 points better</span><span>47.5% adjusted for player skill</span></div>
             <p class="lead">Shamblerot Vectorium lists have a win rate 7.2 points above the faction
             average and make up 19% of the faction's lists. Death Guard climbed from 45.9% in the first
             period (19 Jun to 21 Jul) to 52.1% in the latest (3 Oct to 25 Oct), one of 10 factions
@@ -71420,7 +71880,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="genestealer_cult-all">Whole edition</h3>
-            <div class="statline"><span class="big">47.5%<small>win rate, rank 19 of 28</small></span><span>3,617 games</span><span>1,010 lists from 646 players</span><span>top-10% finishes 1.01x entry share</span><span>going first 6.6 points better</span></div>
+            <div class="statline"><span class="big">47.5%<small>win rate, rank 19 of 28</small></span><span>3,617 games</span><span>1,010 lists from 646 players</span><span>top-10% finishes 1.01x entry share</span><span>going first 6.6 points better</span><span>46.6% adjusted for player skill</span></div>
             <p class="lead">Genestealer Cult fell from 50.8% in the first period (19 Jun to 21 Jul)
             to 42.6% in the latest (3 Oct to 25 Oct), one of 10 factions with a clear change over the
             period. Purestrain Broodswarm lists have a win rate 4.9 points below the faction average
@@ -74175,7 +74635,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="grey_knights-all">Whole edition</h3>
-            <div class="statline"><span class="big">47.1%<small>win rate, rank 20 of 28</small></span><span>6,242 games</span><span>1,777 lists from 1,045 players</span><span>top-10% finishes 0.75x entry share</span><span>going first 5.0 points worse</span></div>
+            <div class="statline"><span class="big">47.1%<small>win rate, rank 20 of 28</small></span><span>6,242 games</span><span>1,777 lists from 1,045 players</span><span>top-10% finishes 0.75x entry share</span><span>going first 5.0 points worse</span><span>46.3% adjusted for player skill</span></div>
             <p class="lead">Going first is worth 5.0 points to Grey Knights (44.9% against 49.8%),
             below the field's 2.3 points. The Predestined Coordinates enhancement gives a win rate
             15.4 points below other lists with the same detachment. Grey Knights won 47.1% of 6,242
@@ -77138,7 +77598,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="chaos_space_marines-all">Whole edition</h3>
-            <div class="statline"><span class="big">47.1%<small>win rate, rank 21 of 28</small></span><span>11,032 games</span><span>3,207 lists from 2,037 players</span><span>top-10% finishes 0.86x entry share</span><span>going first 2.9 points better</span></div>
+            <div class="statline"><span class="big">47.1%<small>win rate, rank 21 of 28</small></span><span>11,032 games</span><span>3,207 lists from 2,037 players</span><span>top-10% finishes 0.86x entry share</span><span>going first 2.9 points better</span><span>45.9% adjusted for player skill</span></div>
             <p class="lead">Chaos Space Marines fell from 51.4% in the first period (19 Jun to 21 Jul)
             to 45.5% in the latest (3 Oct to 25 Oct), one of 10 factions with a clear change over the
             period. The pairing Devotees of Destruction + Nightmare Hunt has a win rate 17.4 points
@@ -77459,10 +77919,9 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
           <div class="blk">
             <h4 id="chaos_space_marines-enh">Enhancements</h4>
             <p>41 enhancements appear in 25 or more lists. The most common is Tempting Addendum (7%
-            of lists). 4 enhancements differ from the other enhancements in their detachment: Eye of
-            Tzeentch (19.9 points below the rest), Eye of the Warp (14.0 points below the rest), Mark
-            of the Hound (13.2 points below the rest) and Warp-fuelled Thrusters (10.5 points below
-            the rest).</p>
+            of lists). 3 enhancements differ from the other enhancements in their detachment: Eye of
+            Tzeentch (19.9 points below the rest), Eye of the Warp (14.0 points below the rest) and
+            Mark of the Hound (13.2 points below the rest).</p>
             <div class="tw">
               <table>
                 <thead>
@@ -77537,13 +77996,6 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
                     <td class="n">2%</td>
                     <td class="n"><span class="eff neg"><span>-13.2 ± 3.7</span><i class="bar" style="width:48px"></i></span></td>
                     <td class="n"><span class="neg">-3.6</span></td>
-                  </tr>
-                  <tr>
-                    <td>Warp-fuelled Thrusters</td>
-                    <td class="n">37</td>
-                    <td class="n">1%</td>
-                    <td class="n"><span class="eff neg"><span>-10.5 ± 3.4</span><i class="bar" style="width:42px"></i></span></td>
-                    <td class="n"><span class="neg">-3.1</span></td>
                   </tr>
                   <tr>
                     <td>Eye of the Warp</td>
@@ -80599,7 +81051,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="chaos_knights-all">Whole edition</h3>
-            <div class="statline"><span class="big">46.9%<small>win rate, rank 22 of 28</small></span><span>6,148 games</span><span>1,742 lists from 1,148 players</span><span>top-10% finishes 0.59x entry share</span><span>going first 1.4 points better</span></div>
+            <div class="statline"><span class="big">46.9%<small>win rate, rank 22 of 28</small></span><span>6,148 games</span><span>1,742 lists from 1,148 players</span><span>top-10% finishes 0.59x entry share</span><span>going first 1.4 points better</span><span>46.1% adjusted for player skill</span></div>
             <p class="lead">Results depend on event size: the faction's effect is +4.2 points in events
             of 24 players or fewer and -4.5 points in events above 48. Houndpack Lance lists have a
             win rate 5.8 points above the faction average and make up 33% of the faction's lists. Chaos
@@ -83656,7 +84108,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="drukhari-all">Whole edition</h3>
-            <div class="statline"><span class="big">46.9%<small>win rate, rank 23 of 28</small></span><span>5,741 games</span><span>1,604 lists from 952 players</span><span>top-10% finishes 0.92x entry share</span><span>going first 1.3 points worse</span></div>
+            <div class="statline"><span class="big">46.9%<small>win rate, rank 23 of 28</small></span><span>5,741 games</span><span>1,604 lists from 952 players</span><span>top-10% finishes 0.92x entry share</span><span>going first 1.3 points worse</span><span>45.9% adjusted for player skill</span></div>
             <p class="lead">The pairing Exhibition of Slaughter + Realspace Raiders has a win rate
             19.9 points below the faction average (21 lists). Drukhari won 46.9% of 5,741 games, 3.1
             points below an even win rate (rank 23 of 28). Skysplinter Assault went from 63% to 43%
@@ -86474,7 +86926,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="blood_angels-all">Whole edition</h3>
-            <div class="statline"><span class="big">46.0%<small>win rate, rank 24 of 28</small></span><span>7,157 games</span><span>2,056 lists from 1,357 players</span><span>top-10% finishes 0.57x entry share</span><span>going first 2.2 points better</span></div>
+            <div class="statline"><span class="big">46.0%<small>win rate, rank 24 of 28</small></span><span>7,157 games</span><span>2,056 lists from 1,357 players</span><span>top-10% finishes 0.57x entry share</span><span>going first 2.2 points better</span><span>44.4% adjusted for player skill</span></div>
             <p class="lead">Blood Angels won 46.0% of 7,157 games, 4.0 points below an even win rate
             (rank 24 of 28). 38.9% of its players won at least 60% of their games, against 46.5% of
             all players. Assault Brethren went from 0% to 46% of the faction's lists between the first
@@ -90205,11 +90657,11 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
       </section>
       <section class="sec" data-faction="aeldari" style="--accent:#1c7081">
         <h2 class="fac" id="aeldari">Aeldari</h2>
-        <nav class="sub" aria-label="Aeldari sections"><strong class="who">Aeldari</strong><a href="#aeldari-all">Whole edition</a><a href="#aeldari-combo">Combinations</a><a href="#aeldari-units">Units</a><a href="#aeldari-det">Detachments</a><a href="#aeldari-enh">Enhancements</a><a href="#aeldari-shift">Pick-rate shifts</a><a href="#aeldari-match">Matchups</a><a href="#aeldari-time">Over time</a><a href="#aeldari-brackets">Results brackets</a><a href="#aeldari-fd">Force Disposition</a><a href="#aeldari-lists">Lists</a><a href="#aeldari-team">Team events</a><a href="#aeldari-milestones">Milestones</a><a href="#aeldari-ms-2026-07-22">22 Jul</a><a href="#aeldari-ms-2026-08-26">26 Aug</a><a href="#aeldari-ms-2026-09-05">5 Sep</a><a href="#aeldari-ms-2026-10-03">3 Oct</a><a href="#aeldari-ms-2026-10-17">17 Oct</a></nav>
+        <nav class="sub" aria-label="Aeldari sections"><strong class="who">Aeldari</strong><a href="#aeldari-all">Whole edition</a><a href="#aeldari-combo">Combinations</a><a href="#aeldari-units">Units</a><a href="#aeldari-det">Detachments</a><a href="#aeldari-shift">Pick-rate shifts</a><a href="#aeldari-match">Matchups</a><a href="#aeldari-time">Over time</a><a href="#aeldari-brackets">Results brackets</a><a href="#aeldari-enh">Enhancements</a><a href="#aeldari-fd">Force Disposition</a><a href="#aeldari-lists">Lists</a><a href="#aeldari-team">Team events</a><a href="#aeldari-milestones">Milestones</a><a href="#aeldari-ms-2026-07-22">22 Jul</a><a href="#aeldari-ms-2026-08-26">26 Aug</a><a href="#aeldari-ms-2026-09-05">5 Sep</a><a href="#aeldari-ms-2026-10-03">3 Oct</a><a href="#aeldari-ms-2026-10-17">17 Oct</a></nav>
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="aeldari-all">Whole edition</h3>
-            <div class="statline"><span class="big">45.6%<small>win rate, rank 25 of 28</small></span><span>7,034 games</span><span>1,994 lists from 1,270 players</span><span>top-10% finishes 0.71x entry share</span><span>going first 0.9 points better</span></div>
+            <div class="statline"><span class="big">45.6%<small>win rate, rank 25 of 28</small></span><span>7,034 games</span><span>1,994 lists from 1,270 players</span><span>top-10% finishes 0.71x entry share</span><span>going first 0.9 points better</span><span>44.0% adjusted for player skill</span></div>
             <p class="lead">Aeldari won 45.6% of 7,034 games, 4.4 points below an even win rate (rank
             25 of 28). The pairing Armoured Warhost + Corsair Coterie has a win rate 23.3 points below
             the faction average (15 lists). Warlock Skyrunners went from 53% to 5% of the faction's
@@ -90772,91 +91224,6 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
                     <td class="n">2%</td>
                     <td class="n">2%</td>
                     <td class="n">2%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="tcap"><a href="#tables">How to read the tables</a></div>
-          </div>
-          <div class="blk">
-            <h4 id="aeldari-enh">Enhancements</h4>
-            <p>24 enhancements appear in 25 or more lists. The most common is Torc of Morai-Heg (8%
-            of lists). One enhancement differs from the other enhancements in its detachment: Key of
-            Ghosts (12.8 points below the rest).</p>
-            <div class="tw">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Enhancement</th>
-                    <th class="n">Lists</th>
-                    <th class="n">Pick</th>
-                    <th class="n">Effect on win rate (pp)</th>
-                    <th class="n">z</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Torc of Morai-Heg</td>
-                    <td class="n">153</td>
-                    <td class="n">8%</td>
-                    <td class="n"><span class="eff "><span>+4.2 ± 1.9</span><i class="bar" style="width:16px"></i></span></td>
-                    <td class="n"><span>+2.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Light of Clarity</td>
-                    <td class="n">125</td>
-                    <td class="n">6%</td>
-                    <td class="n"><span class="eff "><span>+3.0 ± 2.3</span><i class="bar" style="width:12px"></i></span></td>
-                    <td class="n"><span>+1.3</span></td>
-                  </tr>
-                  <tr>
-                    <td>Weavers&#x27; Wail</td>
-                    <td class="n">103</td>
-                    <td class="n">5%</td>
-                    <td class="n"><span class="eff "><span>-3.4 ± 2.5</span><i class="bar" style="width:13px"></i></span></td>
-                    <td class="n"><span>-1.3</span></td>
-                  </tr>
-                  <tr>
-                    <td>Lucid Eye</td>
-                    <td class="n">95</td>
-                    <td class="n">5%</td>
-                    <td class="n"><span class="eff "><span>-1.5 ± 2.6</span><i class="bar" style="width:6px"></i></span></td>
-                    <td class="n"><span>-0.6</span></td>
-                  </tr>
-                  <tr>
-                    <td>Alacritous Assault</td>
-                    <td class="n">94</td>
-                    <td class="n">5%</td>
-                    <td class="n"><span class="eff "><span>-2.9 ± 2.8</span><i class="bar" style="width:11px"></i></span></td>
-                    <td class="n"><span>-1.0</span></td>
-                  </tr>
-                  <tr>
-                    <td>Assassins&#x27; Eye</td>
-                    <td class="n">80</td>
-                    <td class="n">4%</td>
-                    <td class="n"><span class="eff "><span>-5.3 ± 2.6</span><i class="bar" style="width:21px"></i></span></td>
-                    <td class="n"><span>-2.1</span></td>
-                  </tr>
-                  <tr>
-                    <td>Rune of Mists</td>
-                    <td class="n">74</td>
-                    <td class="n">4%</td>
-                    <td class="n"><span class="eff "><span>-2.2 ± 3.2</span><i class="bar" style="width:8px"></i></span></td>
-                    <td class="n"><span>-0.7</span></td>
-                  </tr>
-                  <tr>
-                    <td>Guiding Presence</td>
-                    <td class="n">61</td>
-                    <td class="n">3%</td>
-                    <td class="n"><span class="eff "><span>-4.4 ± 3.6</span><i class="bar" style="width:17px"></i></span></td>
-                    <td class="n"><span>-1.2</span></td>
-                  </tr>
-                  <tr>
-                    <td>Key of Ghosts</td>
-                    <td class="n">42</td>
-                    <td class="n">2%</td>
-                    <td class="n"><span class="eff neg"><span>-12.8 ± 4.1</span><i class="bar" style="width:48px"></i></span></td>
-                    <td class="n"><span class="neg">-3.1</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -91559,6 +91926,86 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
             </details>
           </div>
           <div class="blk">
+            <h4 id="aeldari-enh">Enhancements</h4>
+            <p>24 enhancements appear in 25 or more lists. The most common is Torc of Morai-Heg (8%
+            of lists).</p>
+            <details>
+              <summary>Enhancement table</summary>
+              <div class="tw">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Enhancement</th>
+                      <th class="n">Lists</th>
+                      <th class="n">Pick</th>
+                      <th class="n">Effect on win rate (pp)</th>
+                      <th class="n">z</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Torc of Morai-Heg</td>
+                      <td class="n">153</td>
+                      <td class="n">8%</td>
+                      <td class="n"><span class="eff "><span>+4.2 ± 1.9</span><i class="bar" style="width:16px"></i></span></td>
+                      <td class="n"><span>+2.2</span></td>
+                    </tr>
+                    <tr>
+                      <td>Light of Clarity</td>
+                      <td class="n">125</td>
+                      <td class="n">6%</td>
+                      <td class="n"><span class="eff "><span>+3.0 ± 2.3</span><i class="bar" style="width:12px"></i></span></td>
+                      <td class="n"><span>+1.3</span></td>
+                    </tr>
+                    <tr>
+                      <td>Weavers&#x27; Wail</td>
+                      <td class="n">103</td>
+                      <td class="n">5%</td>
+                      <td class="n"><span class="eff "><span>-3.4 ± 2.5</span><i class="bar" style="width:13px"></i></span></td>
+                      <td class="n"><span>-1.3</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lucid Eye</td>
+                      <td class="n">95</td>
+                      <td class="n">5%</td>
+                      <td class="n"><span class="eff "><span>-1.5 ± 2.6</span><i class="bar" style="width:6px"></i></span></td>
+                      <td class="n"><span>-0.6</span></td>
+                    </tr>
+                    <tr>
+                      <td>Alacritous Assault</td>
+                      <td class="n">94</td>
+                      <td class="n">5%</td>
+                      <td class="n"><span class="eff "><span>-2.9 ± 2.8</span><i class="bar" style="width:11px"></i></span></td>
+                      <td class="n"><span>-1.0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Assassins&#x27; Eye</td>
+                      <td class="n">80</td>
+                      <td class="n">4%</td>
+                      <td class="n"><span class="eff "><span>-5.3 ± 2.6</span><i class="bar" style="width:21px"></i></span></td>
+                      <td class="n"><span>-2.1</span></td>
+                    </tr>
+                    <tr>
+                      <td>Rune of Mists</td>
+                      <td class="n">74</td>
+                      <td class="n">4%</td>
+                      <td class="n"><span class="eff "><span>-2.2 ± 3.2</span><i class="bar" style="width:8px"></i></span></td>
+                      <td class="n"><span>-0.7</span></td>
+                    </tr>
+                    <tr>
+                      <td>Guiding Presence</td>
+                      <td class="n">61</td>
+                      <td class="n">3%</td>
+                      <td class="n"><span class="eff "><span>-4.4 ± 3.6</span><i class="bar" style="width:17px"></i></span></td>
+                      <td class="n"><span>-1.2</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tcap"><a href="#tables">How to read the tables</a></div>
+            </details>
+          </div>
+          <div class="blk">
             <h4 id="aeldari-fd">Force Disposition</h4>
             <details>
               <summary>Force Disposition table</summary>
@@ -91615,7 +92062,8 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
               <div class="tcap"><a href="#tables">How to read the tables</a></div>
             </details>
             <p class="closing">Nothing clear turned up in matchups against the strength model, milestone
-            moves, Force Disposition, results brackets, terrain layout and list width.</p>
+            moves, enhancement effects, Force Disposition, results brackets, terrain layout and list
+            width.</p>
           </div>
           <div class="blk">
             <h4 id="aeldari-lists">Representative lists</h4>
@@ -93543,7 +93991,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="black_templars-all">Whole edition</h3>
-            <div class="statline"><span class="big">45.3%<small>win rate, rank 26 of 28</small></span><span>3,737 games</span><span>1,103 lists from 732 players</span><span>top-10% finishes 0.90x entry share</span><span>going first 4.6 points better</span></div>
+            <div class="statline"><span class="big">45.3%<small>win rate, rank 26 of 28</small></span><span>3,737 games</span><span>1,103 lists from 732 players</span><span>top-10% finishes 0.90x entry share</span><span>going first 4.6 points better</span><span>44.1% adjusted for player skill</span></div>
             <p class="lead">Redemptor Dreadnought is in 11% of lists, and lists with it have a win
             rate 7.0 points below comparable lists. Black Templars won 45.3% of 3,737 games, 4.7 points
             below an even win rate (rank 26 of 28). Assault Brethren went from 0% to 40% of the faction's
@@ -96843,7 +97291,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="imperial_agents-all">Whole edition</h3>
-            <div class="statline"><span class="big">43.7%<small>win rate, rank 27 of 28</small></span><span>868 games</span><span>241 lists from 147 players</span><span>top-10% finishes 0.96x entry share</span><span>going first 2.0 points better</span></div>
+            <div class="statline"><span class="big">43.7%<small>win rate, rank 27 of 28</small></span><span>868 games</span><span>241 lists from 147 players</span><span>top-10% finishes 0.96x entry share</span><span>going first 2.0 points better</span><span>41.1% adjusted for player skill</span></div>
             <p class="lead">Imperial Agents won 43.7% of 868 games, 6.3 points below an even win rate
             (rank 27 of 28). Veiled Blade Elimination Force went from 5% to 100% of the faction's lists
             between the first period and the last 28 days. Without its three most active players the
@@ -98542,7 +98990,7 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
         <div class="blks">
           <div class="blk">
             <h3 class="grp" id="astra_militarum-all">Whole edition</h3>
-            <div class="statline"><span class="big">40.3%<small>win rate, rank 28 of 28</small></span><span>8,479 games</span><span>2,482 lists from 1,616 players</span><span>top-10% finishes 0.48x entry share</span><span>going first 3.8 points better</span></div>
+            <div class="statline"><span class="big">40.3%<small>win rate, rank 28 of 28</small></span><span>8,479 games</span><span>2,482 lists from 1,616 players</span><span>top-10% finishes 0.48x entry share</span><span>going first 3.8 points better</span><span>37.2% adjusted for player skill</span></div>
             <p class="lead">Astra Militarum has the lowest win rate of the 28 factions: 40.3% over
             8,479 games. 31.1% of its players won at least 60% of their games, against 46.5% of all
             players. Bridgehead Strike went from 11% to 25% of the faction's lists between the first
