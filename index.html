@@ -39,7 +39,8 @@ gtag('config', 'G-P7R76TTEHD');
 /* Base */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:9.5rem;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--text);font-variant-numeric:tabular-nums;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--text);font-variant-numeric:tabular-nums}
+html,body{overflow-x:clip}
 a{color:var(--ink);text-decoration-color:var(--rule);text-underline-offset:3px}
 a:hover{text-decoration-color:var(--ink)}
 
@@ -138,6 +139,7 @@ nav.sub{position:sticky;top:var(--navh);z-index:9;display:flex;flex-wrap:wrap;al
 nav.sub .who{padding:var(--s-2) var(--s-3) var(--s-2) 0;margin-right:var(--s-1);font:600 var(--fs-2)/1.2 var(--display);letter-spacing:.01em;border-right:3px solid var(--accent)}
 nav.sub a{padding:var(--s-2) 0;font-size:var(--fs-0);color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.sub a:hover,nav.sub a.on{color:var(--ink);border-bottom-color:var(--accent)}
+nav.sub::-webkit-scrollbar{display:none}
 .lcap{margin:var(--s-4) 0 var(--s-2);font-weight:600}
 
 /* Lists */
@@ -160,12 +162,25 @@ h4{font:600 var(--fs-3)/1.2 var(--display);letter-spacing:.01em;margin:var(--s-5
 
 /* Mobile */
 @media (max-width:700px){
-  .pair2{grid-template-columns:1fr}
+  .pair2,figure .pair{grid-template-columns:minmax(0,1fr)}
   body{font-size:16px}
-  h1{font-size:2.5rem} h2{font-size:2rem}
+  h1{font-size:2.5rem} h2{font-size:2rem} h3.grp{font-size:1.9rem}
   .wrap{padding:0 var(--s-3)} nav.top .in{padding:0 var(--s-3);gap:var(--s-3)}
   .masthead{padding-top:var(--s-5)} .sec{padding-top:var(--s-5)}
   td,th{padding:5px 8px}
+  nav.sub{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;gap:0 var(--s-4);padding:0 var(--s-3);margin-left:calc(var(--s-3) * -1);margin-right:calc(var(--s-3) * -1)}
+  nav.sub .who{position:sticky;left:0;background:var(--bg);flex:none;padding-left:0}
+  nav.sub a{flex:none;padding:var(--s-3) 0;font-size:var(--fs-1)}
+  .statline .big{font-size:2rem}
+  .lcs{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:420px){
+  .wrap{padding:0 12px}
+  nav.sub{margin-left:-12px;margin-right:-12px;padding:0 12px}
+  h1{font-size:2.1rem} h2{font-size:1.7rem} h3.grp{font-size:1.6rem} h4{font-size:1.2rem}
+  .lead,.dek{font-size:1rem}
+  table{font-size:var(--fs-0)}
+  nav.top select{max-width:9.5rem}
 }
 
 /* Print */
@@ -101748,20 +101763,42 @@ h4{font:600 var(--fs-3)/1.2 var(--display);letter-spacing:.01em;margin:var(--s-5
       <p class="foot">40k 11th edition: faction balance, updated 28 October 2026.</p>
     </div>
     <script>
+const root = document.documentElement;
+let offset = 150;
+
+function measure() {
+  const top = document.querySelector("nav.top");
+  const sub = document.querySelector("nav.sub");
+  const h = top ? top.offsetHeight : 0;
+  root.style.setProperty("--navh", h + "px");
+  offset = h + (sub ? sub.offsetHeight : 0) + 12;
+  root.style.scrollPaddingTop = offset + "px";
+}
+
 function follow(nav) {
   const links = [...nav.querySelectorAll("a")];
   const targets = links.map(a => document.querySelector(a.getAttribute("href")));
+  let last = -1;
   return () => {
     let current = 0;
     targets.forEach((t, k) => {
-      if (t && t.getBoundingClientRect().top < 150) current = k;
+      if (t && t.getBoundingClientRect().top < offset + 8) current = k;
     });
     links.forEach((a, k) => a.classList.toggle("on", k === current));
+    if (current !== last && nav.scrollWidth > nav.clientWidth) {
+      nav.scrollTo({ left: Math.max(links[current].offsetLeft - 120, 0) });
+    }
+    last = current;
   };
 }
 
 const updates = [...document.querySelectorAll("nav.top, nav.sub")].map(follow);
+const run = () => { measure(); updates.forEach(u => u()); };
 addEventListener("scroll", () => updates.forEach(u => u()), { passive: true });
+addEventListener("resize", run);
+addEventListener("load", run);
+if (document.fonts) document.fonts.ready.then(run);
+run();
 </script>
   </body>
 </html>
