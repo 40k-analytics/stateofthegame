@@ -58,7 +58,8 @@ a:hover{text-decoration-color:var(--ink)}
 /* Navigation */
 nav.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--rule)}
 nav.top .in{max-width:var(--page);margin:0 auto;padding:0 var(--s-4);display:flex;align-items:center;gap:var(--s-4);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
-nav.top .in::-webkit-scrollbar{display:none}
+nav.top .in::-webkit-scrollbar,nav.top .links::-webkit-scrollbar{display:none}
+nav.top .links{display:flex;align-items:center;gap:var(--s-4)}
 nav.top a{padding:var(--s-3) 0;font-size:var(--fs-1);color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.top a:hover,nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
 nav.top select{margin-left:auto;font:inherit;font-size:var(--fs-1);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:2px;padding:4px 6px}
@@ -176,6 +177,10 @@ h4{font:600 var(--fs-3)/1.2 var(--display);letter-spacing:.01em;margin:var(--s-5
   .wrap{padding:0 var(--s-3)} nav.top .in{padding:0 var(--s-3);gap:var(--s-3)}
   .masthead{padding-top:var(--s-5)} .sec{padding-top:var(--s-5)}
   td,th{padding:5px 8px}
+  nav.top .in{flex-wrap:wrap;overflow:visible;padding-top:var(--s-2)}
+  nav.top select{order:-1;flex:1 1 100%;margin:0;max-width:none;padding:6px 8px}
+  nav.top .links{order:2;flex:1 1 100%;overflow-x:auto;scrollbar-width:none;gap:var(--s-4)}
+  nav.top .links a{flex:none;padding:var(--s-2) 0}
   nav.sub{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;gap:0 var(--s-4);padding:0 var(--s-3);margin-left:calc(var(--s-3) * -1);margin-right:calc(var(--s-3) * -1)}
   nav.sub .who{position:sticky;left:0;background:var(--bg);flex:none;padding-left:0}
   nav.sub a{flex:none;padding:var(--s-3) 0;font-size:var(--fs-1)}
@@ -188,7 +193,6 @@ h4{font:600 var(--fs-3)/1.2 var(--display);letter-spacing:.01em;margin:var(--s-5
   h1{font-size:2.1rem} h2{font-size:1.7rem} h3.grp{font-size:1.6rem} h4{font-size:1.2rem}
   .lead,.dek{font-size:1rem}
   table{font-size:var(--fs-0)}
-  nav.top select{max-width:9.5rem}
 }
 
 /* Share links */
@@ -213,15 +217,17 @@ h2:hover .lnk,h3:hover .lnk,h4:hover .lnk,.lnk:focus-visible{opacity:1}
   <body>
     <nav class="top">
       <div class="in">
-        <a href="#top">Start</a>
-        <a href="#summary">Summary</a>
-        <a href="#milestones">Milestones</a>
-        <a href="#scores">Win rates</a>
-        <a href="#brackets">Brackets</a>
-        <a href="#variety">Variety</a>
-        <a href="#extra">Extra areas</a>
-        <a href="#method">Method</a>
-        <a href="#factions">Factions</a>
+        <div class="links">
+          <a href="#top">Start</a>
+          <a href="#summary">Summary</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#scores">Win rates</a>
+          <a href="#brackets">Brackets</a>
+          <a href="#variety">Variety</a>
+          <a href="#extra">Extra areas</a>
+          <a href="#method">Method</a>
+          <a href="#factions">Factions</a>
+        </div>
         <select aria-label="Jump to a faction" onchange="if(this.value){location.hash=this.value;this.selectedIndex=0}">
           <option value="">Jump to faction</option>
           <option value="adepta_sororitas">Adepta Sororitas</option>
@@ -101799,8 +101805,9 @@ function follow(nav) {
       if (t && t.getBoundingClientRect().top < offset + 8) current = k;
     });
     links.forEach((a, k) => a.classList.toggle("on", k === current));
-    if (current !== last && nav.scrollWidth > nav.clientWidth) {
-      nav.scrollTo({ left: Math.max(links[current].offsetLeft - 120, 0) });
+    const box = nav.querySelector(".links") || nav;
+    if (current !== last && box.scrollWidth > box.clientWidth) {
+      box.scrollTo({ left: Math.max(links[current].offsetLeft - 120, 0) });
     }
     last = current;
   };
