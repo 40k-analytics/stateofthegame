@@ -59,7 +59,8 @@ a:hover{text-decoration-color:var(--ink)}
 nav.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--rule)}
 nav.top .in{max-width:var(--page);margin:0 auto;padding:0 var(--s-4);display:flex;align-items:center;gap:var(--s-4);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
 nav.top .in::-webkit-scrollbar,nav.top .links::-webkit-scrollbar{display:none}
-nav.top .links{display:flex;align-items:center;gap:var(--s-4)}
+nav.top .links{display:flex;align-items:center;gap:var(--s-4);flex:1 1 auto;min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.top select{flex:none}
 nav.top a{padding:var(--s-3) 0;font-size:var(--fs-1);color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.top a:hover,nav.top a.on{color:var(--ink);border-bottom-color:var(--ink)}
 nav.top select{margin-left:auto;font:inherit;font-size:var(--fs-1);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:2px;padding:4px 6px}
