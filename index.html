@@ -136,7 +136,7 @@ svg .ann{stroke:var(--ink);stroke-width:1;fill:none}
 .part{padding:var(--s-1) 0 var(--s-4)}
 .part>h2:first-child{margin-top:var(--s-5)}
 .part,.blk{position:relative;isolation:isolate}
-.part:nth-of-type(even)::before,.blks>.blk:nth-child(even)::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:-100vmax;right:-100vmax;background:var(--band)}
+.part:nth-of-type(even)::before,.blks>.blk:nth-child(even)::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--band)}
 .blks>.blk:nth-child(even){--band:color-mix(in srgb,var(--accent) 12%,var(--bg))}
 
 /* Faction */
